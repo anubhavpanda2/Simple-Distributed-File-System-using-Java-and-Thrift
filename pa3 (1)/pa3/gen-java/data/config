@@ -1,0 +1,9 @@
+coordinatorIP=csel-kh4250-39.cselabs.umn.edu
+coordinatorPort=9095
+ServerNodePort=9096
+synchTime=10000
+inputDir=./data/
+extension=.txt
+N=7
+Nr=4
+Nw=4

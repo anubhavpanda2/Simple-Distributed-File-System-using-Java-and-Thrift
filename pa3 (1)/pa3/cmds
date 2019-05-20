@@ -1,0 +1,46 @@
+thrift --gen java serverNode.thrift
+thrift --gen java coordinatorNode.thrift
+
+javac -cp ".:/usr/local/Thrift/*" serverNodeServer.java -d .
+java -cp ".:/usr/local/Thrift/*" serverNodeServer
+
+javac -cp ".:/usr/local/Thrift/*" coordinatorNodeServer.java -d .
+java -cp ".:/usr/local/Thrift/*" coordinatorNodeServer
+
+
+javac -cp ".:/usr/local/Thrift/*" Client.java -d .
+java -cp ".:/usr/local/Thrift/*" Client
+
+csel-kh4250-30.cselabs.umn.edu
+csel-kh4250-39.cselabs.umn.edu
+csel-kh4250-38.cselabs.umn.edu
+csel-kh4250-33.cselabs.umn.edu
+csel-kh4250-47.cselabs.umn.edu
+csel-kh4250-32.cselabs.umn.edu
+csel-kh4250-31.cselabs.umn.edu
+
+write
+r w
+w r
+
+write 3
+r 1 w 2
+r 2 w 1
+r 3
+w 3
+
+
+r   w
+0   100
+100   0
+20   80
+80   20
+50  50
+
+
+
+
+
+
+
+echo -ne "\033]0;Server39\007"
